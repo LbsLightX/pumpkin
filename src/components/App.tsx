@@ -24,7 +24,7 @@ function App() {
 				<Canvas carved={carved} />
 				<img class='pumpkin' src={pumpkinSide} />
 			</div>
-			<p>Check out the <a href='https://codeberg.org/basil/pumpkin'>source code</a>.</p>
+			<p>Check out the <a href='https://lbslightx.github.io/pumpkin/'>source code</a>.</p>
 		</>
 	);
 }
