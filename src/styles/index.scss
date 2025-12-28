@@ -1,0 +1,65 @@
+:root {
+	// Vite defaults
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	font-weight: 400;
+
+	background-color: var(--bg);
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+
+	// Sizing
+	--cell: 32px;
+	--pumpkin-size: calc(var(--cell) * 16);
+
+	--bg: #1C020A;
+	--button: #DAA95B;
+	--button-hover: #D78E3A;
+	--button-secondary: #3E1605;
+	--button-secondary-hover: #4f1e08;
+}
+
+* { box-sizing: border-box; }
+
+body {
+	margin: 0;
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	padding: 32px;
+}
+
+.container {
+	position: relative;
+}
+
+.pumpkin {
+	image-rendering: pixelated;
+	height: var(--pumpkin-size); width: var(--pumpkin-size);
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 16px;
+}
+
+svg {
+	display: block;
+}
+
+p {
+	color: var(--button-hover);
+
+	a {
+		color: var(--button);
+		font-weight: 700;
+		text-decoration: none;
+
+		&:hover { text-decoration: underline; }
+	}
+}

@@ -1,0 +1,32 @@
+.carver {
+	position: absolute;
+	inset: var(--cell);
+	z-index: 10;
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+	height: var(--pumpkin-size);
+
+	.row {
+		display: flex;
+		flex-direction: row;
+		width: var(--pumpkin-size);
+
+		> button {
+			width: var(--cell); height: var(--cell);
+			background-color: rgba(0, 0, 0, 0.0);
+			
+			/* Consider removing this for accessibility */
+			outline: none !important;
+
+			border: none;
+			padding: 0;
+
+			&:hover {
+				background-color: rgba(0, 0, 0, 0.3);
+			}
+		}
+	}
+}

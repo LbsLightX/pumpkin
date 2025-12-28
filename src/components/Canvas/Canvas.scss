@@ -1,0 +1,6 @@
+canvas {
+	position: absolute;
+	inset: var(--cell);
+	image-rendering: pixelated;
+	width: calc(var(--pumpkin-size) - var(--cell) * 2);
+}

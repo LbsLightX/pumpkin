@@ -1,0 +1,12 @@
+.export {
+	background-color: transparent;
+	border: 0;
+	padding: 8px;
+	cursor: pointer;
+	border-radius: 8px;
+
+	color: var(--button-secondary);
+	background-color: var(--button);
+
+	&:hover { background-color: var(--button-hover); }
+}
